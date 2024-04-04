@@ -1,0 +1,59 @@
+@charset "utf-8";
+@use "setting" as *;
+@use "common" as *;
+@use "lower" as *;
+
+@include common;
+@include lower;
+
+/*               news 下層ページ(single)
+======================================================= */
+.news_single {
+}
+
+.l-news-wrap {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 130px;
+  @media only screen and (max-width: 1023px) {
+    padding-top: 60px;
+  }
+}
+
+.p-news-detail {
+  margin-top: 50px;
+  @media only screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+}
+
+.p-news-detail__date {
+  text-align: right;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  @media only screen and (max-width: 767px) {
+    font-size: 15px;
+  }
+}
+.p-news-detail__title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 0px;
+  line-height: 2.4;
+  border-bottom: 1px solid #949494;
+  @media only screen and (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+.p-news-contents {
+  margin-top: 30px;
+  p {
+    line-height: 1.8;
+  }
+
+  .wp-block-image {
+    text-align: center;
+    margin-top: 20px;
+  }
+}

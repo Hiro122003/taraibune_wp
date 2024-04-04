@@ -1,0 +1,14 @@
+@use "common" as *;
+@include common;
+
+.p-404_cont {
+  padding: 50px 0;
+}
+@media only screen and (max-width: 767px) {
+  .p-404_cont {
+    padding: 0;
+  }
+}
+.p-404_cont__link {
+  margin-top: 2em;
+}
